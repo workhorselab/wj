@@ -1,11 +1,28 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <Button size={"sm"}>Click me</Button>
+      <Card>
+        <CardHeader>
+          <CardTitle>Card Title</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p>Card Content</p>
+        </CardContent>
+        <CardFooter>
+          <Button size={"sm"}>Click me</Button>
+        </CardFooter>
+      </Card>
       <Card>
         <CardHeader>
           <CardTitle>Card Title</CardTitle>
